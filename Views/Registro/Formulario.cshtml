@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/custom.css" />
+</head>
+<body>
+    <div class="container ">
+        <div class="jumbotron text-center">
+            <h1>Cargar datos de Alumno</h1>
+        </div>
+        <form action="/Registro/Guardar" method="post">
+            <div class="row">
+                <label class="col-md-2 aladerecha">Nombre</label>
+                <input class="col-md-4" type="text" name="nombre" required/>
+            </div>
+            <div class="row">
+                <label class="col-md-2 aladerecha">Apellido</label>
+                <input class="col-md-4" type="text" name="apellido" required/>
+            </div>
+            <div class="row">
+                <label class="col-md-2 aladerecha">Documento</label>
+                <input class="col-md-4" type="number" name="documento" required/>
+            </div>
+            <div class="row">
+                <div class="col-md-6 aladerecha">
+                    <input class="btn-danger" type="submit" value="Guardar" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
